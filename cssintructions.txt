@@ -1,0 +1,5 @@
+ 1.writting css on the element is called as inline css
+ 2.writting css inside  the head tag  is called as internal css
+
+
+

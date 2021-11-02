@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        practice3
+    </title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+        }
+
+        .header {
+
+            height: 100px;
+            background: rgb(164, 206, 14);
+
+        }
+
+        .box1 {
+            height: calc(100% - 200px);
+            width: 300px;
+            background: rgb(31, 2, 2);
+            float: left;
+        }
+
+        .childbox {
+            margin: 70px 0 0 70px;
+            padding: 0 0 0 0px;
+            height: 300px;
+            width: 150px;
+            background: rgb(156, 146, 146);
+            float: left;
+        }
+
+        .box2 {
+            width: calc(100% - 600px);
+            height: calc(100% - 200px);
+            background: rgb(17, 101, 134);
+            float: left;
+
+        }
+
+        .box3 {
+            height: calc(100% - 200px);
+            width: 300px;
+            background: rgb(190, 12, 12);
+            float: left;
+        }
+
+        .ChildOfB2 {
+            margin: 0px 10px 0 10px;
+            width: 0px auto;
+            height: 20%;
+            background: rgb(255, 255, 255);
+
+        }
+
+
+
+        .Footer {
+            width: 100%;
+            height: 100px;
+            background: rgb(230, 10, 145);
+            float: left;
+        }
+
+        .red {
+            background: rgb(255, 5, 5);
+
+        }
+
+        .yellow {
+            background: rgb(221, 207, 10);
+        }
+
+        .green {
+            background: rgb(12, 230, 4);
+        }
+
+        .blue {
+            background: rgb(47, 5, 235);
+        }
+
+        .black {
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+    </div>
+    <div class="box1">
+        <div class="childbox"></div>
+    </div>
+    <div class="box2">
+        <div class="ChildOfB2 red  "></div>
+        <div class="ChildOfB2 yellow "></div>
+        <div class="ChildOfB2 green"></div>
+        <div class="ChildOfB2 blue "></div>
+        <div class="ChildOfB2 black "></div>
+
+
+
+    </div>
+    <div class="box3">
+        <div class="childbox"></div>
+    </div>
+    <div class="Footer"></div>
+</body>
+
+</html>
