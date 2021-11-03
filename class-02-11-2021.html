@@ -9,9 +9,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <style>
+        html,
         body {
             margin: 0;
             padding: 0;
+            /* height: 100%; */
         }
 
         .container {
@@ -84,6 +86,75 @@
             background: red;
             color: #fff
         }
+
+        .sideBar {
+            width: 300px;
+            background: rgb(177, 0, 0);
+            float: left;
+            height: calc(100vh - 100px);
+        }
+
+        .contentArea {
+            background: pink;
+            width: calc(100% - 300px);
+            height: 100px;
+            height: calc(100vh - 200px);
+            float: left;
+            overflow-y: auto;
+        }
+
+        .footer {
+            background: gray;
+            color: #fff;
+            width: calc(100% - 300PX);
+            height: 100px;
+            float: left;
+        }
+
+        .subNav {
+            margin: 0;
+            padding: 0;
+        }
+
+        .subNav li {
+            list-style: none;
+        }
+
+        .subNav li a {
+            color: #000;
+            background: yellow;
+            width: 100%;
+            padding: 15px 0px;
+            margin-bottom: 1px;
+            float: left;
+            font-size: 14px;
+            font-family: arial;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .subNav li a:hover {
+            color: yellow;
+            background: #000;
+        }
+
+        .contentArea .contentBox {
+            width: calc(33.3333% - 21px);
+            float: left;
+            text-align: center;
+            padding: 0px 10px;
+            border-left: solid 1px white;
+        }
+
+        .contentArea .contentBox:first-child {
+            border-left: none;
+        }
+
+        .contentArea .contentBox img {
+            width: 60%;
+            border-radius: 50%;
+            margin: 0px auto;
+        }
     </style>
 </head>
 
@@ -117,6 +188,61 @@
                     alt="profile img" class="proImg">
             </div>
         </div>
+        <div class="sideBar">
+            <ul class="subNav">
+                <li>
+                    <a href="#">Home </a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Services </a>
+                </li>
+                <li>
+                    <a href="#">Products </a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contentArea">
+            <div class="contentBox">
+                <h1>Box 1</h1>
+                <img src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
+                    alt="profile img" class="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            </div>
+            <div class="contentBox">
+                <h1>Box 1</h1>
+                <img src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
+                    alt="profile img" class="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            </div>
+            <div class="contentBox">
+                <h1>Box 1</h1>
+                <img src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
+                    alt="profile img" class="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            </div>
+        </div>
+        <div class="footer"></div>
     </div>
 </body>
 
