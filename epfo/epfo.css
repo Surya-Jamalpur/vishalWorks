@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.redStrip {
+  background: red;
+  width: 100%;
+  padding: 3px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.redStrip div {
+  width: 30%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.logo {
+}
+.businessName {
+  width: calc(100% - 330px);
+}
+.businessName h1 {
+  color: rgb(173, 19, 19);
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+}
+.businessName h4 {
+  color: #000;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.azadi {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  width: 100%;
+  background: #27408b;
+  float: left;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation ul li {
+  /* display: inline-block; */
+  float: left;
+}
+.navigation ul li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  border-left: solid 1px #fff;
+  padding: 10px 15px;
+  float: left;
+}
+.navigation ul li a:last-child {
+  border-right: solid 1px #fff;
+}
