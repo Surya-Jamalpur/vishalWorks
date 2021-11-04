@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+.redStrip{
+    width: 100%;
+    font-size: 14px;
+    background: red;
+    padding: 5px 0;
+    display: flex;
+    justify-content:space-around;
+    color: #fff;
+}
+.redStrip div{
+    width: 30%;
+    
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.businessName{
+    width: calc(100% - 330px);
+}
+.businessName h1{
+    color: rgb(173, 19, 19);
+    font-size: 34px;
+    margin: 0px;
+    padding: 0px;
+}
+.businessName h4{
+    color: black;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.headerEndLogos{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    width: 100%;
+    background:  #27408b;
+    float: left;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    float: left;
+}
+.navigation ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-left: solid 1px #fff;
+    float: left;
+}
+.navigation ul li a:last-child{
+    border-right: solid 1px #fff;
+}
+
+
+
+
