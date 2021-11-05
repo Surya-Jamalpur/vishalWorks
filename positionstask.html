@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>
+        positionstask
+    </title>
+    <style>
+        .box {
+            width: 600px;
+            height: 500px;
+            float: left;
+        }
+
+        .greenBox {
+            width: 200px;
+            height: 250px;
+            background: green;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .redBox {
+            width: 200px;
+            height: 250px;
+            background: red;
+            position: absolute;
+            top: 180px;
+            left: 150px;
+            z-index: 1;
+        }
+
+        .blackCircle {
+            width: 60px;
+            height: 60px;
+            background: #000;
+            border-radius: 100%;
+            position: absolute;
+            top: 150px;
+            left: 20px;
+
+        }
+
+        .box2 {
+            width: 500px;
+            height: 500px;
+
+            position: relative;
+            float: right
+        }
+
+        .blackBox {
+            width: 400px;
+            height: 300px;
+            background: #000;
+            position: absolute;
+            top: 200px;
+            right: 20px;
+        }
+
+        .forCircle {
+            width: 150px;
+            border-radius: 100%;
+            height: 150px;
+            background: darkgoldenrod;
+            position: absolute;
+            top: -90px;
+            right: 120px;
+        }
+
+        .forSmallCircle1 {
+            width: 50px;
+            height: 40px;
+            background: firebrick;
+            position: absolute;
+            border-radius: 100%;
+            top: 29px;
+            left: 19px;
+        }
+
+        .forSmallCircle2 {
+            width: 50px;
+            height: 40px;
+            background: rgb(13, 142, 182);
+            position: absolute;
+            border-radius: 100%;
+            bottom: 13px;
+            right: 29px;
+        }
+
+        .smallBox {
+            width: 25px;
+            height: 25px;
+            background:
+        }
+    </style>
+
+    <body>
+        <div class="box">
+            <div class="greenBox">
+                <div class="blackCircle">
+                </div>
+            </div>
+            <div class="redBox">
+            </div>
+        </div>
+        <div class="box2">
+            <div class="blackBox">
+                <div class="forCircle">
+                    <div class="forSmallCircle1">
+                    </div>
+                    <div class="smallBox">
+
+                    </div>
+                    <div class="forSmallCircle2">
+
+                    </div>
+                </div>
+            </div>
+    </body>
+</head>
+
+</html>
