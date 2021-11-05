@@ -14,7 +14,6 @@ body {
     font-size: 14px;
     background: red;
     padding: 5px 0;
-    display: flex;
     justify-content:space-around;
     color: #fff;
 }
@@ -23,7 +22,6 @@ body {
     
 }
 .header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
@@ -45,7 +43,6 @@ body {
     padding: 0;
 }
 .headerEndLogos{
-    display: flex;
     align-items: center;
 }
 .navigation{
@@ -72,6 +69,36 @@ body {
 .navigation ul li a:last-child{
     border-right: solid 1px #fff;
 }
+.pt-5 {
+    padding-top: 5px;
+}
+.setDisplayFlex {
+    display: flex;
+}
+.theme {
+    width: 65%;
+}
+.theme img {
+    width: 100%;
+}
+.themeBtns {
+    width: 35%;
+    flex-flow: wrap;
+}
+.themeBtns a {
+    background: #27408b;
+    padding: 8px  0;
+    border-radius: 5px ;
+    margin: 0px  5px;
+    font-size: 12px;
+    width: calc(50% - 10px);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
 
 
 

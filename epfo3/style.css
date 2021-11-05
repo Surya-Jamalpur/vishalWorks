@@ -74,3 +74,11 @@ html,body{
 .navigation ul li a:last-child{
     border-right: 1px solid #fff;
 }
+.forImg{
+    width: 65%;
+    display: flex;
+}
+.forImg img{
+    width: 100%;
+
+}
