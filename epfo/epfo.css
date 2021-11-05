@@ -2,8 +2,24 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+html {
+  /* height: 100%; */
+}
+.test {
+  width: 100%;
+  background: pink;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1200px;
@@ -74,4 +90,31 @@ body {
 }
 .navigation ul li a:last-child {
   border-right: solid 1px #fff;
+}
+.sidebar {
+  height: calc(100vh - 189px);
+  width: 200px;
+  background: #000;
+}
+.socialMedia {
+  width: 100px;
+  background: lime;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; /* required */
+}
+.socialMedia ul {
+}
+.socialMedia ul li {
+  list-style: none;
+}
+.socialMedia ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.socialMedia ul li a img {
+  width: 60px;
+  margin: 0px auto;
 }
