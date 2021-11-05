@@ -1,0 +1,76 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+.srollRedSrtip{
+    width: 100%;
+    background: red;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.srollRedSrtip div{
+     width: 30%;
+}
+.container{
+    width: 1200px;
+    margin: 0px auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;   
+}
+.businessName{
+    width:calc(100% - 330px);
+}
+.businessName h1{
+    color: rgb(173, 19, 19);
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+}
+.businessName h4{
+    color: black;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.headerEndlogos{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    width: 100%;
+    background:#27408b;
+    float: left;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    
+}
+.navigation ul li{
+    display: inline;
+    float: left;
+}
+.navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-left: 1px solid #fff;
+    float: left;
+
+}
+.navigation ul li a:last-child{
+    border-right: 1px solid #fff;
+}
