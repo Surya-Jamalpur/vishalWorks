@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <ul id="navigation"></ul>
+    </header>
+
+    <script>
+        let links = [
+            { linkName: 'Home', linkPath: 'index.html' },
+            { linkName: 'About Us', linkPath: 'index.html' },
+            { linkName: 'Services', linkPath: 'index.html' },
+            { linkName: 'Products', linkPath: 'index.html' },
+            { linkName: 'Contact', linkPath: 'index.html' },
+        ]
+        let liItems = '';
+        for (i = 0; i < links.length; i++) {
+            liItems += "<li><a href='" + links[i].linkPath + "'>" + links[i].linkName + "</a></li>";
+        }
+        document.getElementById("navigation").innerHTML = liItems;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .elipsis {
+            width: 200px;
+            background: red;
+            height: 20px;
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="elipsis" id="elipsis">
+        jdfhv bidhbv isdyvi ysdgbivy sjdvyg sjdygvuj sdygvusdy vusdyvui ysdvbuy sduyv suidyvb uisydvbui ysdbvi ysdbvy sdivysidisdhyb
+        vi
+    </div>
+    <button onclick="expandDetails()" id="btn">Expand</button>
+
+    <script>
+        let elipsis = document.getElementById('elipsis');
+        let toggleBtn = document.getElementById('btn');
+        console.log(elipsis);
+
+        function expandDetails() {
+            if (toggleBtn.innerHTML == 'Collapse') {
+                collapse();
+
+            } else {
+                expand()
+            }
+        }
+
+        function collapse() {
+            elipsis.style.height = '20px';
+            elipsis.style.textOverflow = 'ellipsis';
+            elipsis.style.overflow = 'hidden';
+            elipsis.style.whiteSpace = 'nowrap';
+            toggleBtn.innerHTML = 'Expand';
+        }
+        function expand() {
+            elipsis.style.height = '200px';
+            elipsis.style.textOverflow = 'clip';
+            elipsis.style.overflow = 'unset';
+            elipsis.style.whiteSpace = 'unset';
+            toggleBtn.innerHTML = 'Collapse';
+        }
+    </script>
+</body>
+
+
+</html>
